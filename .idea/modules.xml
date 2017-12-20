@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/book.iml" filepath="$PROJECT_DIR$/book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter-1/rpc-client/rpc-client.iml" filepath="$PROJECT_DIR$/chapter-1/rpc-client/rpc-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter-1/rpc-interface/rpc-interface.iml" filepath="$PROJECT_DIR$/chapter-1/rpc-interface/rpc-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter-1/rpc-server/rpc-server.iml" filepath="$PROJECT_DIR$/chapter-1/rpc-server/rpc-server.iml" />
+    </modules>
+  </component>
+</project>
