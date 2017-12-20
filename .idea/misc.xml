@@ -4,11 +4,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter-4/dubbo-client/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter-4/dubbo-server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/chapter-1/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter-4/double-api/pom.xml" />
       </set>
     </option>
   </component>

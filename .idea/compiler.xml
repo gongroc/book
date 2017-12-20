@@ -6,6 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dubbo-api" />
+        <module name="dubbo-client" />
+        <module name="dubbo-getway" />
+        <module name="dubbo-server" />
         <module name="rpc-client" />
         <module name="rpc-interface" />
         <module name="rpc-server" />
@@ -14,6 +18,12 @@
     <bytecodeTargetLevel>
       <module name="book" target="1.5" />
       <module name="chapter-1" target="1.5" />
+      <module name="chapter-4" target="1.5" />
+      <module name="double-api" target="1.5" />
+      <module name="dubbo-api" target="1.5" />
+      <module name="dubbo-client" target="1.8" />
+      <module name="dubbo-getway" target="1.8" />
+      <module name="dubbo-server" target="1.8" />
       <module name="rpc-client" target="1.5" />
       <module name="rpc-interface" target="1.5" />
       <module name="rpc-server" target="1.5" />

@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/book.iml" filepath="$PROJECT_DIR$/book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter-4/chapter-4.iml" filepath="$PROJECT_DIR$/chapter-4/chapter-4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter-4/dubbo-api/dubbo-api.iml" filepath="$PROJECT_DIR$/chapter-4/dubbo-api/dubbo-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter-4/dubbo-client/dubbo-client.iml" filepath="$PROJECT_DIR$/chapter-4/dubbo-client/dubbo-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter-4/dubbo-getway/dubbo-getway.iml" filepath="$PROJECT_DIR$/chapter-4/dubbo-getway/dubbo-getway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter-4/dubbo-server/dubbo-server.iml" filepath="$PROJECT_DIR$/chapter-4/dubbo-server/dubbo-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter-1/rpc-client/rpc-client.iml" filepath="$PROJECT_DIR$/chapter-1/rpc-client/rpc-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter-1/rpc-interface/rpc-interface.iml" filepath="$PROJECT_DIR$/chapter-1/rpc-interface/rpc-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter-1/rpc-server/rpc-server.iml" filepath="$PROJECT_DIR$/chapter-1/rpc-server/rpc-server.iml" />
