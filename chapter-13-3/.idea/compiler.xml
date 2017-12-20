@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="dubbo-api" />
         <module name="dubbo-gateway" />
+        <module name="dubbo-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="chapter-13-3" target="1.5" />
       <module name="dubbo-api" target="1.5" />
       <module name="dubbo-gateway" target="1.8" />
+      <module name="dubbo-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
