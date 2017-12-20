@@ -15,7 +15,7 @@
     <modules>
         <module>dubbo-api</module>
         <module>dubbo-client</module>
-        <module>dubbo-getway</module>
+        <module>dubbo-gateway</module>
         <module>dubbo-server</module>
     </modules>
 
