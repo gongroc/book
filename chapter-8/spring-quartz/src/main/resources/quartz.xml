@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-lazy-init="false">
+    <!-- 数据源 -->
+    <bean id="quartzDataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/quartz?useSSL=false" />
+        <property name="username" value="root" />
+        <property name="password" value="123456" />
+    </bean>
+    <!-- 触发器 -->
+    <bean id="trigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <bean class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+                <!-- 开启定时任务持久化 -->
+                <property name="Durability" value="true" />
+                <!-- 定时任务地址 -->
+                <property name="jobClass" value="org.book.task.quartz.task.MyTask" />
+            </bean>
+        </property>
+        <!-- Cron表达式 -->
+        <property name="cronExpression">
+            <value>0/10 * * * * ?</value>
+        </property>
+    </bean>
+    <!-- 调度工厂 -->
+    <bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <!-- 使触发器生效 -->
+        <property name="triggers">
+            <list>
+                <ref bean="trigger" />
+            </list>
+        </property>
+        <!-- 指定QuartZ配置文件地址 -->
+        <property name="configLocation" value="classpath:quartz.properties" />
+        <!-- 启动时延期3秒开始任务 -->
+        <property name="startupDelay" value="3" />
+        <!-- 使数据源生效 -->
+        <property name="dataSource" ref="quartzDataSource" />
+        <!-- 使数自动注入配置生效 -->
+        <property name="jobFactory">
+            <bean class="org.book.task.quartz.configuration.AutoWiringSpringBeanJobFactory" />
+        </property>
+    </bean>
+</beans>

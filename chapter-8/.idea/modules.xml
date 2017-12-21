@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/chapter-8.iml" filepath="$PROJECT_DIR$/chapter-8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-quartz/spring-quartz.iml" filepath="$PROJECT_DIR$/spring-quartz/spring-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-task/spring-task.iml" filepath="$PROJECT_DIR$/spring-task/spring-task.iml" />
+    </modules>
+  </component>
+</project>
