@@ -28,4 +28,6 @@ public interface StudentRepository extends PagingAndSortingRepository<Student, L
     @Modifying
     @Query(value = "delete from Student WHERE id = :id", nativeQuery = true)
     void myDelete(@Param("id") long id);
+
+
 }

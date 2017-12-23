@@ -1,7 +1,6 @@
 package org.book.db.redis.service;
 
 import org.book.db.redis.utils.DistributedLockHandler;
-import org.book.db.redis.utils.Lock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
@@ -40,18 +39,17 @@ public class BusinessService {
     private DistributedLockHandler distributedLockHandler;
 
     public void lockTest() {
-        Lock lock = new Lock("lock", "value");
         try {
             // 初次尝试并未锁住，将获得到锁
-            System.out.println(distributedLockHandler.tryLock(lock) ? "获得到锁":"被锁住");
+            System.out.println(distributedLockHandler.getLock("key", "value") ? "获得到锁" : "被锁住");
             // 再次尝试发现已经锁住
-            System.out.println(distributedLockHandler.tryLock(lock) ? "获得到锁":"被锁住");
+            System.out.println(distributedLockHandler.getLock("key", "value") ? "获得到锁" : "被锁住");
             // 模拟锁超时
-            Thread.sleep(30 * 100);
+            Thread.sleep(DistributedLockHandler.LOCK_EXPIRE);
             // 再次请求锁已超时，将再次获得到锁
-            System.out.println(distributedLockHandler.tryLock(lock) ? "获得到锁":"被锁住");
+            System.out.println(distributedLockHandler.getLock("key", "value") ? "获得到锁" : "被锁住");
             // 手动释放锁
-            distributedLockHandler.releaseLock(lock);
+            distributedLockHandler.releaseLock("key");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

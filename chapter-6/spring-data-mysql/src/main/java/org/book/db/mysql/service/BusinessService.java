@@ -39,7 +39,6 @@ public class BusinessService {
         repository.delete(1L);
 
         Page<Student> result = repository.findAll(new PageRequest(1, 10, new Sort(Sort.Direction.DESC, "id")));
-        //获得查询的结果集
         List<Student> content = result.getContent();
         for (Student student : content) {
             System.out.println(student.getName());
