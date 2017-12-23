@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/chapter-5.iml" filepath="$PROJECT_DIR$/chapter-5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-admin/cloud-admin.iml" filepath="$PROJECT_DIR$/cloud-admin/cloud-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-client/cloud-client.iml" filepath="$PROJECT_DIR$/cloud-client/cloud-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-config/cloud-config.iml" filepath="$PROJECT_DIR$/cloud-config/cloud-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" filepath="$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-gateway/cloud-getway.iml" filepath="$PROJECT_DIR$/cloud-gateway/cloud-getway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-server/cloud-server.iml" filepath="$PROJECT_DIR$/cloud-server/cloud-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-turbine/cloud-turbine.iml" filepath="$PROJECT_DIR$/cloud-turbine/cloud-turbine.iml" />
+    </modules>
+  </component>
+</project>

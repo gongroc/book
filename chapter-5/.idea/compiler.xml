@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-admin" />
+        <module name="cloud-client" />
+        <module name="cloud-config" />
+        <module name="cloud-eureka" />
+        <module name="cloud-getway" />
+        <module name="cloud-server" />
+        <module name="cloud-turbine" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chapter-5" target="1.5" />
+      <module name="cloud-admin" target="1.8" />
+      <module name="cloud-client" target="1.8" />
+      <module name="cloud-config" target="1.8" />
+      <module name="cloud-eureka" target="1.8" />
+      <module name="cloud-getway" target="1.8" />
+      <module name="cloud-server" target="1.8" />
+      <module name="cloud-turbine" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
