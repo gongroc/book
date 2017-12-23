@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/chapter-16.iml" filepath="$PROJECT_DIR$/chapter-16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-auth/cloud-auth.iml" filepath="$PROJECT_DIR$/cloud-auth/cloud-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" filepath="$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-gateway/cloud-gateway.iml" filepath="$PROJECT_DIR$/cloud-gateway/cloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-server/cloud-server.iml" filepath="$PROJECT_DIR$/cloud-server/cloud-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-swagger/dubbo-swagger.iml" filepath="$PROJECT_DIR$/dubbo-swagger/dubbo-swagger.iml" />
+    </modules>
+  </component>
+</project>

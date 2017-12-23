@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-auth" />
+        <module name="cloud-eureka" />
+        <module name="cloud-gateway" />
+        <module name="cloud-server" />
+        <module name="dubbo-swagger" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chapter-16" target="1.5" />
+      <module name="cloud-auth" target="1.8" />
+      <module name="cloud-eureka" target="1.8" />
+      <module name="cloud-gateway" target="1.8" />
+      <module name="cloud-server" target="1.8" />
+      <module name="dubbo-swagger" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
