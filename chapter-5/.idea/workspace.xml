@@ -49,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestConfiguration.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloud-client/src/main/java/org/book/rpc/cloud/client/configuration/TestConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -57,6 +57,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,6 +93,7 @@
         <option value="$PROJECT_DIR$/cloud-gateway/src/test/java/org/book/rpc/cloud/gateway/CloudGatewayApplicationTests.java" />
         <option value="$PROJECT_DIR$/cloud-client/src/main/java/org/book/rpc/cloud/client/CloudClientApplication.java" />
         <option value="$PROJECT_DIR$/cloud-client/src/main/java/org/book/rpc/cloud/client/configuration/TestConfiguration.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -92,13 +103,20 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1177" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -115,18 +133,23 @@
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="chapter-5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chapter-5" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
               <item name="chapter-5" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloud-client" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="chapter-5" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloud-client" type="616d4139:PackageViewModuleNode" />
-              <item name="org.book.rpc.cloud.client.configuration" type="1f31426a:PackageElementNode" />
+              <item name="cloud-admin" type="616d4139:PackageViewModuleNode" />
             </path>
             <path>
               <item name="chapter-5" type="58d84e3e:PackageViewProjectNode" />
@@ -259,12 +282,12 @@
       <workItem from="1513853853511" duration="12000" />
       <workItem from="1514050389686" duration="7000" />
       <workItem from="1514051682998" duration="13000" />
-      <workItem from="1514051722034" duration="194000" />
+      <workItem from="1514051722034" duration="286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226000" />
+    <option name="totallyTimeSpent" value="318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="0" />
@@ -370,6 +393,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
