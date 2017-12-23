@@ -23,7 +23,7 @@ import java.util.List;
 
 @Configuration
 @EnableSwagger2
-public class SwaggerConfiguration {
+public class Swagger2Configuration {
 
     @Bean
     public Docket createRestApi() throws IOException, XmlPullParserException {
@@ -36,15 +36,15 @@ public class SwaggerConfiguration {
                 .version(model.getVersion())
                 .build();
 
-        List<ResponseMessage> responseMessageList = new ArrayList<>();
-        responseMessageList.add(new ResponseMessageBuilder().code(404).message("找不到资源").build());
-        responseMessageList.add(new ResponseMessageBuilder().code(500).message("服务器内部错误").build());
+        List<ResponseMessage> responseMessages = new ArrayList<>();
+        responseMessages.add(new ResponseMessageBuilder().code(404).message("找不到资源").build());
+        responseMessages.add(new ResponseMessageBuilder().code(500).message("服务器内部错误").build());
 
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo)
-                .globalResponseMessage(RequestMethod.GET, responseMessageList)
-                .globalResponseMessage(RequestMethod.POST, responseMessageList)
-                .globalResponseMessage(RequestMethod.PUT, responseMessageList)
-                .globalResponseMessage(RequestMethod.DELETE, responseMessageList)
+                .globalResponseMessage(RequestMethod.GET, responseMessages)
+                .globalResponseMessage(RequestMethod.POST, responseMessages)
+                .globalResponseMessage(RequestMethod.PUT, responseMessages)
+                .globalResponseMessage(RequestMethod.DELETE, responseMessages)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("org.book"))
                 .paths(PathSelectors.any())

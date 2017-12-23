@@ -20,7 +20,7 @@ import java.util.List;
 @Primary
 @Configuration
 @EnableSwagger2
-public class SwaggerConfiguration implements SwaggerResourcesProvider {
+public class Swagger2Configuration implements SwaggerResourcesProvider {
 
     @Override
     public List<SwaggerResource> get() {

@@ -27,4 +27,5 @@ public class UserValidate {
     public void setAge(int age) {
         this.age = age;
     }
+
 }
